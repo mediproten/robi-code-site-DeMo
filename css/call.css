@@ -1,0 +1,252 @@
+body {
+    font-family: text-box;
+}
+/* ===========================
+        Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    direction: rtl;
+    font-family: 'Vazirmatn', 'IRANSans', 'Tahoma', sans-serif; /* اضافه شد */
+}
+a {
+    text-decoration: none;
+}
+/* ============= header =============== */
+header {
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    
+    margin-top: 1rem;
+    position: relative;
+    font-family:header-font;
+    
+}
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-inline: 20rem;
+    transform: translateX(-10%);
+    margin: 0 auto ;
+    
+}
+header ul li a {
+color: rgba(56, 54, 54, 0.808);
+font-weight: 600;
+    transition: 0.3s;
+
+&:hover {
+    color: black;
+    transition: 0.3s;
+}
+}
+header .robicode-text {
+    margin: 0;
+    display: flex;
+    font-size: 1.4rem;
+    margin-right: 4rem;
+}
+header .robicode-text #one-robicode-rext {
+    color: orange;
+}
+header::after {
+    content: "";
+    width: 100dvw;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    top: 2.8rem;
+}
+header .sing-and-log #singup-btn {
+    padding: .4rem 1.5rem;
+    border-radius: 0.3rem;
+    background: orange;
+    color: white;
+    font-weight: 900;
+}
+header .sing-and-log #login-btn {
+    padding: .4rem 1.5rem;
+    border-radius: 0.3rem;
+    background: rgb(255, 255, 255);
+    color: orange;
+    border: 1px solid orange;
+    font-weight: 900;
+}
+header .sing-and-log {
+    margin-left: 4rem;
+}
+/* ===========================
+        Main
+=========================== */
+
+main {
+    width: 90%;
+    max-width: 1250px;
+    margin: 80px auto;
+}
+
+/* ===========================
+        Title
+=========================== */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    background: #ff7a00;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 122, 0, .5);
+}
+
+.title h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #222;
+}
+
+/* ===========================
+      Cards Container
+=========================== */
+
+.section.div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+/* ===========================
+         Card
+=========================== */
+
+.section {
+    background: #fff;
+    border-radius: 24px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .05);
+    transition: .35s;
+}
+
+.section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 55px rgba(255, 122, 0, .18);
+}
+
+/* ===========================
+      Orange Icon Box
+=========================== */
+
+.iconBox {
+    width: 80px;
+    height: 80px;
+    min-width: 110px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9b2f, #ff7a00);
+    color: white;
+    font-size: 42px;
+    transition: .4s;
+}
+
+.section:hover .iconBox {
+    transform: rotate(-6deg) scale(1.08);
+}
+
+/* ===========================
+         Texts
+=========================== */
+
+.texts {
+    width: 100%;
+    text-align: right;
+}
+
+.texts h3 {
+    font-size: 33px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.texts h4 {
+    font-size: 23px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.texts h5 {
+    font-size: 18px;
+    color: #8b8b8b;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+/* ===========================
+     Social Icons
+=========================== */
+
+.icon-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    margin-top: 18px;
+}
+
+.icon-div i {
+    font-size: 34px;
+    color: #666;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.icon-div i:hover {
+    color: #ff7a00;
+    transform: translateY(-5px);
+}
+
+/* ===========================
+     Responsive
+=========================== */
+
+@media (max-width: 950px) {
+    .section.div {
+        grid-template-columns: 1fr;
+    }
+    .title h2 {
+        font-size: 32px;
+    }
+    .section {
+        padding: 28px;
+    }
+    .iconBox {
+        width: 90px;
+        height: 90px;
+        font-size: 35px;
+    }
+    .texts h3 {
+        font-size: 27px;
+    }
+}

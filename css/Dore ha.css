@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    user-select: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: wellcome-section-font;
+}
+:root {
+    --main-orangecolor:rgb(255, 115, 0);
+}
+a {
+    text-decoration: none;
+}
+/* ============= header =============== */
+header {
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    
+    margin-top: 1rem;
+    position: relative;
+    font-family:header-font;
+    
+}
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-inline: 20rem;
+    transform: translateX(-10%);
+    margin: 0 auto ;
+    
+}
+header ul li a {
+color: rgba(56, 54, 54, 0.808);
+font-weight: 600;
+    transition: 0.3s;
+
+&:hover {
+    color: black;
+    transition: 0.3s;
+}
+}
+header .robicode-text {
+    margin: 0;
+    display: flex;
+    font-size: 1.4rem;
+    margin-right: 4rem;
+}
+header .robicode-text #one-robicode-rext {
+    color: orange;
+}
+header::after {
+    content: "";
+    width: 100dvw;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    top: 2.8rem;
+}
+header .sing-and-log #singup-btn {
+    padding: .4rem 1.5rem;
+    border-radius: 0.3rem;
+    background: orange;
+    color: white;
+    font-weight: 900;
+}
+header .sing-and-log #login-btn {
+    padding: .4rem 1.5rem;
+    border-radius: 0.3rem;
+    background: rgb(255, 255, 255);
+    color: orange;
+    border: 1px solid orange;
+    font-weight: 900;
+}
+header .sing-and-log {
+    margin-left: 4rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-family: wellcome-section-font;
+}
+
+h2 p {
+    color: var(--main-orangecolor);
+}
+
+.box-div {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.eight-Box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid orange;
+    border-radius: .9rem;
+    padding: .5rem;
+    gap: .5rem;
+    box-shadow: 0 4px 20px rgba(255,166,0,.35);
+    transition: .4s;
+}
+
+.eight-Box:hover {
+    transform: translateY(-10px) scale(.97);
+}
+
+.eight-Box img {
+    width: 100%;
+    border-radius: .6rem;
+    filter: grayscale(85%);
+    transition: .4s;
+}
+
+.eight-Box img:hover {
+    filter: grayscale(0%);
+}
+
+.eight-Box h2 {
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+.eight-Box h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.eight-Box a {
+    margin-top: auto;
+    text-align: center;
+    background: var(--main-orangecolor);
+    color: white;
+    padding: .15rem;
+    border-radius: .5rem;
+    transition: .3s;
+    cursor: not-allowed;
+}
+
+.eight-Box a:hover {
+    background: rgb(230,100,0);
+}

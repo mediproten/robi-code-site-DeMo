@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-orangecolor:rgb(255, 115, 0);
+}
+/* ============== main section =============== */
+.main-section {
+    width:max-content;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-block: 6rem;
+    border: 2px solid orange;
+    padding: 2rem;
+    margin-inline: auto;
+    gap: 4rem;
+    flex-direction: column;
+    border-radius: 12px;
+    position: relative;
+}
+.main-section a {
+    display: flex;
+    font-family:header-font ;
+}
+.two-section {
+    display: flex;
+    width:fit-content;
+    gap: 5rem;
+    
+    
+}
+.section .singUp-section {
+    
+}
+.section h2 {
+    margin-top: -4rem;
+    margin-inline: 4rem;
+    width: 22rem;
+    margin-right: 5rem;
+    filter: contrast(155%) drop-shadow(4px 5.5px 0px black);
+}
+.a-btn-div {
+    display: flex;
+    gap: 15rem;
+    
+    
+    
+    color: var(--main-orangecolor);
+    
+}
+.a-btn-div a {
+    border-bottom: 1px solid var(--main-orangecolor);
+    scale: 1.2;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+     font-family: header-font;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    
+    
+}
+#section-a  {
+    padding-left: 17rem;
+}
+#section-b {
+    padding-right: 17rem;
+}
+.section legend {
+margin-bottom: .1rem;
+}
+.section input {
+ padding:6px 10px;
+ border: 1.8px solid rgba(255, 166, 0, 0.719);
+ outline: none;
+ border-radius: 7px;
+}
+.section input:hover {
+     border: 1.8px solid rgb(255, 166, 0);
+}
+/* ====================  capchaaaaa ===================== */
+.section .capcha {
+    display: flex;
+    gap: .2rem;
+}
+.section .capcha .capcha-id {
+    width:fit-content;
+    height: fit-content;
+    border: 1.8px solid rgb(102, 255, 0);
+    padding: 2px 5px;
+        text-align: center;
+        color: black;
+        font-family:Lilita One;
+        letter-spacing: 2px;
+        border-radius:7px;
+        /* display:flex; */
+        text-decoration: line-through;
+        user-select: none;
+        position: absolute;
+        inset: 0% 59% -10% ;
+        transform: translateY(10%);
+        display: flex;
+    }
+.section .capcha .spannnnn {
+    position: relative;
+}
+#c-yek {
+ transform: rotate(10deg);
+
+}
+#c-do {
+ transform: rotate(-30deg);
+ 
+}
+#c-se {
+ transform: rotate(-10deg);
+ 
+}
+#c-char {
+ transform: rotate(0deg);
+ 
+}
+#c-pang {
+ transform: rotate(-30deg);
+ 
+}
+
+/* ------------------------------ */
+
+
+
+
+
+
+.section button {
+    padding: .0rem;
+    background: var(--main-orangecolor);
+    border: none;
+    font-family: footer-font;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+/* .two-section::after {
+    content: "";
+    inset: -2px -2px -2px 50%;
+    background: var(--main-orangecolor);
+    position: absolute;
+    padding: -2rem;
+    border-radius: 12px;
+    background-image: url("../image/login.png");
+    background-position: 50%;
+    background-size: 14rem;
+    background-repeat: no-repeat;
+    /* display: none;} */
+.banner {
+    background: var(--main-orangecolor);
+    position: absolute;
+    
+    border-radius: 12px;
+    
+    background-position: 50%;
+    background-size: 14rem;
+    background-repeat: no-repeat;
+    z-index: 1000;
+}
+.banner-right {
+    inset: -2px -2px -2px 50%;
+    padding: -2rem;
+    background-image: url("../image/login.png");
+    transition: 0.4s;
+}
+.banner-left{
+    inset: -2px 50% -2px -2px;
+    padding: -2rem;
+    background-image: url("../image/contact.png");
+    transform: scaleX(1);
+    transition: 0.4s;
+}
+
+
+.a-link-singUpandLogin-div {
+    position: relative;
+}
+.a-link-singUpandLogin {
+    text-decoration: none;
+    color: var(--main-orangecolor);
+    font-size: 1rem;
+    padding: 2px 3px;
+    margin-right: .5rem;
+
+    
+    &::after {
+        content: "";
+        width:.1rem;
+        height: 1.1px;
+        background: var(--main-orangecolor);
+        position: absolute;
+        top: 1.6rem;
+        left: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        
+         visibility: hidden;
+    }
+    &:hover::after {
+        left:auto;
+        visibility:visible;
+        width: 4rem;
+        transition: .4s;
+
+        
+    }
+}
