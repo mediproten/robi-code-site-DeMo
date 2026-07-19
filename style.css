@@ -444,8 +444,7 @@ header ul li a {
     white-space: nowrap;
 }
 #singup-btn {
-    
-    
-    
+    font-variant: small-caps;
+    word-break: break-all;
 }
 }
