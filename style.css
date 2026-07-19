@@ -26,8 +26,8 @@ header {
     display: flex;
     gap: 4rem;
     text-align: center;
-    align-items: center;
-    justify-content:center;
+    align-items: center;justify-content:center;
+    
     
     margin-top: 1rem;
     position: relative;
@@ -417,4 +417,35 @@ footer {
  background:var(--main-orangecolor);
  color: rgba(0, 0, 0, 0.836);
  padding-block: .3rem;
+}
+/* =================== mobile ====================== */
+
+
+/* tablet  */
+@media (max-width: 576px) {
+header::after {
+top: 5rem;
+margin-inline: 4rem;
+    }
+header {
+    word-break:keep-all;
+}
+header ul li a {
+    font-size: 20px;
+    white-space: nowrap;
+}
+.sing-and-log {
+    display: inline-flex;
+}
+#login-btn , #singup-btn {
+    height: auto;
+    
+    gap: 0px;
+    white-space: nowrap;
+}
+#singup-btn {
+    
+    
+    
+}
 }
