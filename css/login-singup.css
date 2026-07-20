@@ -218,3 +218,192 @@ margin-bottom: .1rem;
         
     }
 }
+/* =========================
+        Responsive
+========================= */
+
+
+/* Tablet */
+@media (max-width: 992px){
+
+    header{
+        gap: 2rem;
+    }
+
+    header .robicode-text{
+        margin-right: 1rem;
+    }
+
+    header ul{
+        gap: 1rem;
+    }
+
+    header .sing-and-log{
+        margin-left: 1rem;
+    }
+
+
+    /* بخش های دو ستونه */
+    main,
+    .wlellcome-section,
+    .TwoSection{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .right-section,
+    .left-section{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .threeBox,
+    .box-div{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .section.div{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* Mobile */
+@media (max-width: 600px){
+
+
+    header{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+
+    header::after{
+        top:100%;
+    }
+
+
+    header ul{
+        flex-direction: column;
+        gap: .8rem;
+        transform:none;
+    }
+
+
+    header .sing-and-log{
+        margin:0;
+    }
+
+
+
+    /* صفحه اصلی */
+
+    .wlellcome-section{
+        margin-inline:1rem;
+    }
+
+
+    .wlellcome-section .left-section img{
+        width:90%;
+    }
+
+
+    .right-section h4{
+        font-size:1rem;
+        line-height:1.8rem;
+    }
+
+
+
+    /* کارت ها */
+
+    .threeBox,
+    .box-div{
+        grid-template-columns:1fr;
+    }
+
+
+    .box-card,
+    .eight-Box,
+    .fourBox{
+        width:100%;
+    }
+
+
+
+    /* درباره ما */
+
+    main{
+        transform:none;
+        margin-top:3rem;
+    }
+
+
+    .section img{
+        width:80%;
+    }
+
+
+
+    /* تماس با ما */
+
+    .section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+
+    .iconBox{
+        min-width:80px;
+        width:80px;
+        height:80px;
+    }
+
+
+
+    /* لاگین و ثبت نام */
+
+    .main-section{
+        width:90%;
+        margin:2rem auto;
+    }
+
+
+    .two-section{
+        width:100%;
+    }
+
+
+    #section-a,
+    #section-b{
+        padding:0;
+    }
+
+
+    .banner{
+        display:none;
+    }
+
+    /* # */
+    @media (max-width:600px){
+
+    .capcha,
+    .spannnnn{
+        width:100%;
+    }
+
+    .spannnnn input{
+        width:100%;
+    }
+
+    .capcha-id{
+        width:100%;
+    }
+
+}
+}

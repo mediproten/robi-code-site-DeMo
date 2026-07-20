@@ -248,5 +248,68 @@ main {
     }
     .texts h3 {
         font-size: 27px;
-    }
+   }
+}
+/* ===========================
+          TABLET
+=========================== */
+@media (max-width:992px){
+
+header{
+    flex-wrap:wrap;
+    gap:1rem;
+    padding:0 20px;
+}
+
+header::after{
+    top:6rem;
+}
+
+header .robicode-text,
+header .sing-and-log{
+    margin:0;
+}
+
+header ul{
+    margin:0;
+    transform:none;
+    gap:1.5rem;
+}
+
+main{
+    width:95%;
+}
+
+.title h2{
+    font-size:2rem;
+}
+
+.section.div{
+    grid-template-columns:1fr;
+}
+
+.section{
+    padding:1.7rem;
+}
+
+.iconBox{
+    width:85px;
+    height:85px;
+    min-width:85px;
+    font-size:2rem;
+}
+
+.texts h3{
+    font-size:1.6rem;
+}
+
+.texts h4{
+    font-size:1.2rem;
+}
+
+.texts h5{
+    font-size:1rem;
+    line-height:1.9rem;
+}
+
 }

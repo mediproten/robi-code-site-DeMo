@@ -92,6 +92,7 @@ h2 {
     margin: 2rem 0;
     font-size: 2rem;
     font-family: wellcome-section-font;
+    margin-top: 2rem;
 }
 
 h2 p {
@@ -137,6 +138,7 @@ h2 p {
     justify-content: flex-start;
     margin: 0;
     font-size: 1.35rem;
+    margin-top: 1rem;
 }
 
 .eight-Box h4 {
@@ -158,4 +160,51 @@ h2 p {
 
 .eight-Box a:hover {
     background: rgb(230,100,0);
+}
+/* ===========================
+          TABLET
+=========================== */
+@media (max-width:992px){
+
+header{
+    flex-wrap:wrap;
+    gap:1rem;
+    padding:0 20px;
+}
+
+header::after{
+    top:6rem;
+}
+
+header .robicode-text,
+header .sing-and-log{
+    margin:0;
+}
+
+header ul{
+    margin:0;
+    transform:none;
+    gap:1.5rem;
+}
+
+h2{
+    font-size:1.8rem;
+    text-align:center;
+    margin-top: 2rem;
+}
+
+.box-div{
+    width:95%;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.2rem;
+}
+
+.eight-Box h2{
+    font-size:1.2rem;
+}
+
+.eight-Box h4{
+    font-size:.95rem;
+}
+
 }
