@@ -1,16 +1,16 @@
 @font-face {
     font-family:header-font ;
-    src: url(./font/Fonts-B_YasDL.com/IRMitraBold.ttf);
+    src: url(./font/Fonts/IRMitraBold.ttf);
 }
 @font-face {
     font-family:wellcome-section-font ;
-    src: url(./font/Fonts-B_YasDL.com/IRKoodak.ttf);
+    src: url(./font/Fonts/IRKoodak.ttf);
 }
 @font-face {
     font-family: text-box;
-    src: url(./font/Fonts-B_YasDL.com/IRZarBold.ttf);
+    src: url(./font/Fonts/IRZarBold.ttf);
 }
 @font-face {
     font-family: footer-font;
-    src: url(./font/Fonts-B_YasDL.com/IRRoya.ttf);
+    src: url(./font/Fonts/IRRoya.ttf);
 }

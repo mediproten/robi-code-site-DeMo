@@ -388,6 +388,12 @@ margin-bottom: .1rem;
     .banner{
         display:none;
     }
+    #vorood-btn {
+    display:none;
+   }
+   .a-btn-div a {
+    display: none;
+   }
 
     /* # */
     @media (max-width:600px){
